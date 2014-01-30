@@ -5,7 +5,10 @@
 	<artifactId>dhcp4java</artifactId>
 	<version>1.0.0</version>
 	<url>http://www.dhcp4java.com/</url>
-	<description>A general purpose API for receiving and sending DHCP/BOOTP packets with support for a variety of options with a high-level datatypes support. It includes a server framework based on a model similar to the well-known Servlet model. Note: it is limited to IPv4 DHCP. </description>
+	<description>A general purpose API for receiving and sending DHCP/BOOTP packets 
+with support for a variety of options with a high-level datatypes support. 
+It includes a server framework based on a model similar to the well-known Servlet model. 
+Note: it is limited to IPv4 DHCP. </description>
 	<licenses>
 		<license>
 			<name>LGPL-2.1</name>
