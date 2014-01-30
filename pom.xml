@@ -34,4 +34,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	<description>A general purpose API for receiving and sending DHCP/BOOTP packets with support for a variety of options with a high-level datatypes support. It includes a server framework based on a model similar to the well-known Servlet model. Note: it is limited to IPv4 DHCP. </description>
 </project>
