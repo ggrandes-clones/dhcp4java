@@ -23,4 +23,4 @@ dhcp4java API for DHCP: a general purpose API for receiving and sending DHCP/BOO
 
 > Original License:
 
-> [LGPLv2](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+> [LGPLv2](http://www.gnu.org/licenses/lgpl-2.1.html)
