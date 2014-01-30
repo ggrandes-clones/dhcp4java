@@ -16,6 +16,13 @@ Note: it is limited to IPv4 DHCP. </description>
 		</license>
 	</licenses>
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.springframework.build</groupId>
+				<artifactId>aws-maven</artifactId>
+				<version>4.4.0.RELEASE</version>
+			</extension>
+		</extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -36,6 +43,41 @@ Note: it is limited to IPv4 DHCP. </description>
 					</excludes>
 				</configuration>
 			</plugin>
+			<!-- Package source to JAR to upload to repo -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.0.4</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- Package JavaDocs to JAR to upload to repo -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
+	<!-- Deployment -->
+	<distributionManagement>
+		<repository>
+			<id>maven-s3-release-repo</id>
+			<name>S3 Release Repository</name>
+			<url>s3://maven-release/release</url>
+		</repository>
+	</distributionManagement>
 </project>
