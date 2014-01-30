@@ -4,7 +4,7 @@
 
 The free open-source DHCP API for Java.
 
-Dhcp4java is a free open-source 100% Java DHCP API as a stand-alone library, suitable for client/server/relay development. It originates from the Perl module [Net::DHCP](http://search.cpan.org/~shadinger/Net-DHCP/). 
+[dhcp4java](http://www.dhcp4java.com/) is a free open-source 100% Java DHCP API as a stand-alone library, suitable for client/server/relay development. It originates from the Perl module [Net::DHCP](http://search.cpan.org/~shadinger/Net-DHCP/). 
 
 Link to the dhcp4java [sourceforge project](http://sourceforge.net/projects/dhcp4java/).
 
